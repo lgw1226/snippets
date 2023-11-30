@@ -18,8 +18,8 @@ def visualize_2d():
     ax.set_xlabel('$x$')
     ax.set_ylabel('$y$')
 
-    ax.set_xlim(-1, 1)
-    ax.set_ylim(-1, 1)
+    # ax.set_xlim(-1, 1)
+    # ax.set_ylim(-1, 1)
     ax.set_aspect('equal')
 
     ax.plot(x, y, 'k.')
