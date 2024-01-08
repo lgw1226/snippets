@@ -72,7 +72,7 @@ def log_images():
     for _ in range(num_iters):
 
         images = np.array(data.images) / 255  # divide by 255 for normalization to (0, 1)
-        # images.shape = (2, 427, 640, 3) (batch size, width, height, channels)
+        # images.shape = (2, 427, 640, 3) (batch size, height, width, channels)
         # 1. generate random mask from random sampling
         # 2. expand the last dimension
         # 3. repeat the generated (and expanded) random mask (channels) times
