@@ -26,6 +26,7 @@ def tSNE():
 
     # fit embeddings
     embeddings = model.fit_transform(data.data)
+    ic(type(data.data), type(embeddings))
     labels = data.target
 
     # visualize
