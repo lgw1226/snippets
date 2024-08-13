@@ -12,6 +12,7 @@ def save_video():
     fps = 30
     for _ in range(fps * duration):
         image = np.random.randint(0, 256, size=(height, width, 3), dtype=np.uint8)
+        image = image[:,:,::-1]  # RGB (numpy) to BGR (cv)
         video_writer.write(image)
     video_writer.release()
 
